@@ -47,3 +47,40 @@
 
 6. (optional) 그 외 Docker(도커) , GraphQL(그래프큐엘) 등등...
 ```
+
+# ★ spring 규칙 ★
+
+```
+● 규칙 1 : spring package 이름 설정 방법
+    1. 패키지는 3개부터 시작한다.(default)
+        1-1) 첫번째 패키지 : com, io, kr 등등
+        1-2) 두번째 패키지 : 회사이름
+        1-3) 세번째 패키지 : 프로젝트 명
+        ex) 패키지 명 : com.dw.board
+    2. 패키지를 생성하기 위해서는 3개의 패키지 뒤에 '.패키지명'을 만들자.
+        ex) com.example.first_spring.vo -> vo(value object) 에 관련된 클래스만 생성
+
+1. controller 패키지 생성
+    1-1) controller : url 요청을 받는 곳
+
+***2. http?
+    2-1) GET : 요청, 조회
+
+```
+
+## Spring 자동 리로드(재시작) 방법
+
+```
+1. 구글 'devtools gradle' search!
+2. 첫번째 피드 들어가서 'Gradle'안에 있는
+
+compileOnly("org.springframework.boot:spring-boot-devtools")
+
+복사
+
+3. Spring(이클립스)에 들어가서 파일이름(코끼리 모양) : 'build.gradle' 들어가
+4. dependencies{ (중괄호 안에 붙여넣기)
+ compileOnly("org.springframework.boot:spring-boot-devtools") // 서버 자동으로 리로드(재시작)
+ }
+ 5. 파일 'build.gradle' 오른쪽 마우스 클릭 후 Gradle -> Refresh... 클릭해서 새로고침 해준다.
+```
