@@ -1,9 +1,5 @@
-# Spring
-```
-1. 스프링은 자바 언어 기반의 프레임워크
-2. 
-```
 # MVC(Model, View, Controller) Pattern
+
 ```
 1. Model
     1-1) 어플리케이션의 정보, 데이터를 나타냄
@@ -30,21 +26,25 @@
         3-4-1) 모델이나 뷰에대해 알고 있어야함.
         3-4-2) 모델이나 뷰의 변경을 모니터링 해야함.
 ```
+
 ## Model
+
 ```
 1. 컨트롤러에서 데이터를 생성하여 뷰에 전달하는 역할.
 2. HashMap형태로 Key : Value 값을 저장함.
 3. model.addAttribute(key, Value) 를 통해 View로 데이터를 전달.
 ```
+
 ## Model 사용법
+
 ```java
 //Model 객체를 파라미터로 받아서 데이터를 뷰로 넘길 수 있다.
 @RequestMapping("/board/view")
 public String view(Model model) {
-    
+
     // 데이터만 설정이 가능
     model.addAttribute("id", "hongku");
-    
+
     return "board/view";
 }
 
