@@ -1,0 +1,69 @@
+Spring 자동 리로드(재시작) 방법
+사용하면 좋은점 : 없이 실행(Ctrl +F11)하면 하나의 port번호가 반복되어서 실행중지 후 다시 실행을 반복해야하지만
+                  dependencies를 추가 해주면 저장(Ctrl+s)만으로 리로드(재시작)을 해주기 때문에 간편함.
+```
+// 1. 구글 'devtools gradle' search!
+// 2. 첫번째 피드 들어가서 'Gradle'안에 있는
+
+// compileOnly("org.springframework.boot:spring-boot-devtools")
+
+// 복사
+
+// 3. Spring(이클립스)에 들어가서 파일이름(코끼리 모양) : 'build.gradle' 들어가
+// 4. 
+dependencies{ 
+// (dependencies 중괄호 안에 붙여넣기)
+
+ compileOnly("org.springframework.boot:spring-boot-devtools") // 서버 자동으로 리로드(재시작)
+
+ }
+// 5. 파일 'build.gradle' 오른쪽 마우스 클릭 후 Gradle -> Refresh... 클릭해서 새로고침 해준다.
+```
+
+===============================================================================================================
+
+gradle lombok( == @Getter생성 , @Setter생성 or @Data)
+```
+// 위치
+// 1. getter,setter가 필요한 클래스에 작성
+
+// 생성방법
+// 1. 구글 'spring lombok gradle' search!
+// 2. 첫번째 피드 들어가서 'Gradle without a plugin'안에 있는
+
+// compileOnly 'org.projectlombok:lombok:1.18.24'
+// annotationProcessor 'org.projectlombok:lombok:1.18.24'
+// testCompileOnly 'org.projectlombok:lombok:1.18.24'
+// testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+// 복사
+
+// 3. Spring(이클립스)에 들어가서 파일이름(코끼리 모양) : 'build.gradle'(빌드.그래들) 들어가
+
+// 4. 
+dependencies{
+//(dependencies 중괄호 안에 붙여넣기)
+//getter,setter 어노테이션으로 함수 생성
+
+compileOnly 'org.projectlombok:lombok:1.18.24'
+annotationProcessor 'org.projectlombok:lombok:1.18.24'
+testCompileOnly 'org.projectlombok:lombok:1.18.24'
+testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+ }
+
+//  5.  파일 'build.gradle' 오른쪽 마우스 클릭 후 하단에 Gradle -> Refresh... 클릭해서 새로고침 해준다.
+//  6. getter,setter 필요한 함수 위에 @Getter @Setter or @Data 작성
+
+    ex) @Getter
+        @Setter
+        or
+        @Data
+        public class UserVO{ //getter, setter 함수가 필요한 클래스
+        private String name;
+	    private int age;
+        // 필드변수 name과 age에 대한 getter, setter 함수가 어노테이션 안에 내장된 것.
+        }
+```
+
+===============================================================================================================

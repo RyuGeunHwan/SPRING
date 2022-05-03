@@ -67,20 +67,3 @@
     2-1) GET : 요청, 조회
 
 ```
-
-## Spring 자동 리로드(재시작) 방법
-
-```
-1. 구글 'devtools gradle' search!
-2. 첫번째 피드 들어가서 'Gradle'안에 있는
-
-compileOnly("org.springframework.boot:spring-boot-devtools")
-
-복사
-
-3. Spring(이클립스)에 들어가서 파일이름(코끼리 모양) : 'build.gradle' 들어가
-4. dependencies{ (중괄호 안에 붙여넣기)
- compileOnly("org.springframework.boot:spring-boot-devtools") // 서버 자동으로 리로드(재시작)
- }
- 5. 파일 'build.gradle' 오른쪽 마우스 클릭 후 Gradle -> Refresh... 클릭해서 새로고침 해준다.
-```
