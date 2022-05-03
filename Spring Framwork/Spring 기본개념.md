@@ -20,7 +20,7 @@
 
 ```
 1. spring 레거시(일반 spring)
-2. spring boot(경량(가벼운) spring)
+2. spring boot(경량(가벼운) spring) (O)
 3. spring 전자정부프레임워크(egov)
 ```
 

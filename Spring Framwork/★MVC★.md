@@ -4,13 +4,15 @@
 
 ```
 M : Model
-    비즈니스 로직을 구현하자, DB 연동 로직 작성
+    1. 비즈니스 로직을 작성, 구현 하자(작성 : @Service(로직 작성하는 클래스에 작성), 구현 : @Autowired(로직 작성한 곳을 불러오는 필드변수에 작성))
+    2. DB 연동 로직 작성
 
 V : View
     최종 사용자에게 결과를 화면(UI)으로 보여줌
 
 C : Controller
-    url로 요청을 받아서 화면과 Model을 연결 시켜주는 역할, Controller에서는 로직을 구현하지 않는다.
+    1. url로 요청을 받아서 화면과 Model을 연결 시켜주는 역할(Controller에서는 로직을 구현하지 않는다, 로직을 작성한 Model을 return할 뿐)
+    2. Model의 로직을 받아 View로 전송
 ```
 
 ```

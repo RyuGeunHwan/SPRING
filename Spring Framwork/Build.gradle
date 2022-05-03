@@ -22,7 +22,7 @@ dependencies{
 
 ===============================================================================================================
 
-gradle lombok( == @Getter생성 , @Setter생성 or @Data)
+gradle ★ lombok ★( == @Getter생성 , @Setter생성 or @Data)
 ```
 // 위치
 // 1. getter,setter가 필요한 클래스에 작성

@@ -3,7 +3,7 @@
 # 1대장 개념 : IoC(Inversion of Conrtol)
 
 ```java
-객체의 생성부터 소명까지 Spring에서 관리함.
+객체의 생성부터 소멸까지 Spring에서 관리함.
 ex)
 @Autowired
 private MainService service;
