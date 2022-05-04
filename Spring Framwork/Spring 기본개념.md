@@ -24,14 +24,14 @@
 3. spring 전자정부프레임워크(egov)
 ```
 
-## ★ Spring 하고 같이 사용하는 친구들 ★
+## ★ Spring 하고 같이 사용하는 친구들(프레임워크) ★
 
 ```
 문제점 : spring만으로 어플리케이션을 개발하는데 한계가 있고 데이터베이스, 고객에게 보여줄 화면 필요 등등...
 
 1번~5번은 must!!!
 
-1. 데이터베이스 연결과 데이터 생성, 호출, 삭제, 수정을 도와주는 ***ORM
+1. 데이터베이스 연결과 데이터 생성, 호출, 삭제, 수정을 도와주는 ★ORM★
     1-1) ORM종류 : MyBatis(O) , JPA
 
 2. 필요한 기능을 쉽게 다운로드 받을 수 있고, 서버에 업로드(배포)를 도와주는 ***빌드관리도구(Build Tool)
@@ -59,6 +59,9 @@
         ex) 패키지 명 : com.dw.board
     2. 패키지를 생성하기 위해서는 3개의 패키지 뒤에 '.패키지명'을 만들자.
         ex) com.example.first_spring.vo -> vo(value object) 에 관련된 클래스만 생성
+    3. 프로젝트명이 java인 프로젝트는 java관련된 패키지,클래스(Controller,service,vo 등),인터페이스(mapper) 등 것만 온다.
+        3-1) 프로젝트명이 resources인 프로젝트는 java관련되지 않은 것들만 온다.
+            ex) HTML, CSS, 이미지, properties, .yaml, .xml 등이 온다.
 
 1. controller 패키지 생성
     1-1) controller : url 요청을 받는 곳

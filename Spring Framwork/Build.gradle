@@ -1,3 +1,5 @@
+ Gradle은 독립적인 언어이다!!!
+
 
 참고 : 
 1. 리로드(devtools)와 lombok은 처음에 프로젝트 파일을 만들 때 설정 할 수 있다.
@@ -28,7 +30,7 @@ dependencies{
 
 ===============================================================================================================
 
-gradle ★ lombok ★( == @Getter생성 , @Setter생성 or @Data)
+Gradle ★ lombok ★( == @Getter생성 , @Setter생성 or @Data) 설치
 ```
 // 위치
 // 1. getter,setter가 필요한 클래스에 작성
@@ -71,5 +73,14 @@ testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
         // 필드변수 name과 age에 대한 getter, setter 함수가 어노테이션 안에 내장된 것.
         }
 ```
+
+===============================================================================================================
+
+Gradle -> MyBatis(ORM) 설치
+	//ORM
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.0'
+	//MYSQL
+	runtimeOnly 'mysql:mysql-connector-java'
+// 파일 'build.gradle' 오른쪽 마우스 클릭 후 하단에 Gradle -> Refresh... 클릭해서 새로고침 해준다.
 
 ===============================================================================================================
