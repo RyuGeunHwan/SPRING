@@ -27,6 +27,12 @@
     5-2) 다운받은 zip파일을 프로젝트 하는 공간 파일(spring-workspace)에 넣은 후 압축 풀기!
 
 6. 이클립스 들어가서 상단 File클릭 -> Switch Workspace -> Other(프로젝트 하는 공간 파일(spring-workspace) 선택)
+```
 
+## .gitignore 파일 용도
 
+```
+ignore : 무시하다.
+1. ignore파일에 push해도 해당파일은 무시하고 push했으면 좋겠는 파일을 ignore파일에 경로를 입력 해주면 된다.
+    ex) /nbproject/private/  이런식으로 경로 입력. ( / : 경로를 의미)
 ```

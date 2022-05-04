@@ -1,4 +1,10 @@
-Spring 자동 리로드(재시작) 방법
+
+참고 : 
+1. 리로드(devtools)와 lombok은 처음에 프로젝트 파일을 만들 때 설정 할 수 있다.
+2. https://start.spring.io 여기에서~~~
+
+
+Spring 자동 리로드(재시작) 방법(Spring devtools)
 사용하면 좋은점 : 없이 실행(Ctrl +F11)하면 하나의 port번호가 반복되어서 실행중지 후 다시 실행을 반복해야하지만
                   dependencies를 추가 해주면 저장(Ctrl+s)만으로 리로드(재시작)을 해주기 때문에 간편함.
 ```
