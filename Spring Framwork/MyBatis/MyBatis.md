@@ -1,6 +1,9 @@
-## MyBatis 란
+## MyBatis(==프레임 워크) 란
 
-    마이바티스(MyBatis)는 자바 퍼시스턴스 프레임워크(ORM)의 하나로 XML, 애너테이션(annotation)을 사용하여 SQL 문으로 객체(Interface, Class)들을 연결.
+```
+1. 마이바티스(MyBatis)는 자바 퍼시스턴스 프레임워크(ORM)의 하나로 XML, 애너테이션(annotation)을 사용하여 SQL 문으로 객체(Interface, Class)들을 연결.
+2. 자바의 객체(Object)와 SQL 사이에서 자동 맵핑을 도와주는 프레임워크
+```
 
 ### MyBatis 사용법
 
@@ -28,9 +31,9 @@ mybatis:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/dw?useUnicode=true&charaterEncoding=utf-8&serverTimezone=UTC
-    username: root
-    password: tkddnjs0823
+    url: jdbc:mysql://localhost:3306/(DB서버에서 가져올 데이터베이스 이름)?useUnicode=true&charaterEncoding=utf-8&serverTimezone=UTC
+    username: (DB 설정 이름)
+    password: (DB 설정 비밀번호)
 ```
 
 3. step 3) java폴더 안에 mapper 패키지 생성 후 interface 생성
@@ -40,7 +43,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import com.example.first_spring.vo.EmpVO;
 
-// @Mapper : 해당 interface를 SQL결과와 매핑(연결)하겠다. (Mybatis가 매핑을 함)
+// @Mapper : 해당 interface를 SQL결과와 매핑(연결)하겠다. (Mybatis가 자동으로 매핑을 함)
 @Mapper
 public interface MainMapper {
 
