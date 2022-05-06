@@ -18,8 +18,10 @@ V : View
     최종 사용자에게 결과를 화면(UI)으로 보여줌
 
 C : Controller
-    1. url로 요청을 받아서 화면과 Model을 연결 시켜주는 역할(Controller에서는 로직을 구현하지 않는다, 로직을 작성한 Model을 return할 뿐)
+    1. url로 요청을 받아서 화면과 Model을 연결 시켜주는 역할
     2. Model의 로직을 받아 View로 전송
+    3. Http메소드를 작성하는 부분
+    4. Controller에서는 로직을 구현하지 않는다, 로직을 작성한 Model을 return할 뿐(url로 전송할 뿐)
 ```
 
 ## MVC 개념
