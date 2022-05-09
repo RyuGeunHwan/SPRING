@@ -5,7 +5,8 @@
 ```java
 1. xml파일을 보게 되면 <mapper namespace="com.example.first_spring.mapper.EmpMapper">
     //namespace = xml에서 정의한 sql쿼리의 결과를 받을 Mapper(java의 interface)의 위치경로를 입력
-    Spring에서 Mapper위치경로를 입력해준 이 구문이 java에서는 implements(java에서 interface를 상속받는 단어)를 해준것.
+    1-1) Interface인 EmpMapper클래스를 implements한것.
+    1-2) Spring에서 Mapper위치경로를 입력해준 이 구문이 java에서는 implements(java에서 interface를 상속받는 단어)를 해준것.
 
 2. interface는 무조건 사용 클래스에서 오버라이딩(재정의)를 해주어야 하는데 이것은 xml파일의 <select id="getEmpList" resultType="EmpVO">
     이 구문이 @Override 해준것이다.
