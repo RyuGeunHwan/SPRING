@@ -48,8 +48,10 @@ D : DELETE
 # @PostMapping문법
 
 ```java
-// emp테이블에 insert해보기
 	// @RequestBody가 파라미터로 넘어오는 VO클래스를 대신 new해줌.
+    // @PostMapping(insert)일 경우 데이터를 객체로 받고 JSON으로 넘어온다.
+    // @PostMapping의 return타입은 int형이다. 뿐만아니라 트랜잭션(DML)은 return타입이 int형이다.
+    // @PostMapping : 데이터 insert
 	@PostMapping("/emp")
 	public int callEepSet(@RequestBody EmpVO empVO) {
 		System.out.println("사원 hiredate : "+empVO.getHiredate());
@@ -60,12 +62,27 @@ D : DELETE
 
 # @DeleteMapping : 데이터 delete
 
-```
-
+```java
+//@DeleteMapping : 데이터 delete
+// 트랜잭션의 return타입은 int형이다.
+	@DeleteMapping("/emp/empno/{empno}")
+	public int callEmpRemove(@PathVariable("empno") int empNo) {
+		return empService.getEmpRemoveCount(empNo);
+	}
+// delete같은 경우 왜 데이터를 객체로 받지 않는지?
+// 1. 쿼리에서 delete를 할 경우 PK를 삭제하는 쿼리가 오게 되면 
+//  PK에 포함된 데이터는 다 같이 삭제 되기떄문에 다른 조건문을 사용할 필요없음.
+// 그리하여 객체가 아닌 empno만 받을 수 있게 파라미터에 int형이 온것이다.
 ```
 
 # @PatchMapping : 데이터 update
 
-```
-
+```java
+// @PatchMapping : 데이터 update
+// (DB에서 UPDATE == DELETE 후 INSERT이다.)
+// 트랜잭션의 return타입은 int형이다.
+	@PatchMapping("/emp")
+	public int callEmpUpdate(@RequestBody EmpVO empVO) {
+		return empService.getEmpUpdateCount(empVO);
+	}
 ```
