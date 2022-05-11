@@ -36,6 +36,11 @@ D : DELETE
 2. Get (select) *Read
 3. Patch (update) *Update
 4. Delete(delete) *Delete
+
+5. Get을 제외한 트랜잭션의 리턴타입은 int형으로 온다.
+6. 트랜잭션의 쿼리는 서브쿼리로 짜면 안됨!
+	why? 추가해야할 사항이 늘어나면 쿼리가 1개씩 추가 됨.
+	해결방법 : MyBatis쿼리에 IF문을 사용해서 우선 다 업데이트 해줌.(test(조건문)을 이용해서 막아두는거 필수)
 ```
 
 # @PostMapping : 데이터 insert
@@ -59,7 +64,7 @@ D : DELETE
 ```java
 	// @RequestBody가 파라미터로 넘어오는 VO클래스를 대신 new해줌.
     // @PostMapping(insert)일 경우 데이터를 객체로 받고 JSON으로 넘어온다.
-    // @PostMapping의 return타입은 int형이다. 뿐만아니라 트랜잭션(DML)은 return타입이 int형이다.
+    // @PostMapping의 return타입은 int형이다. 뿐만아니라 트랜잭션(DML)은 return타입이 int형이다.(@GetMapping제외)
     // @PostMapping : 데이터 insert
 	@PostMapping("/emp")
 	public int callEepSet(@RequestBody EmpVO empVO) {

@@ -6,7 +6,7 @@
 1. 객체의 생성부터 소멸까지 Spring에서 관리함. => Spring이 제어해서 관리하는 class를 'Bean' class 라고 한다!
 2. IoC 컨테이너는 spring에서 쓰이는 여러 객체들을 생성, 관리하는 객체
 3. IoC가 없다면 @Autowired를 통한 의존성 주입(대입)을 할 수 없을 것
-(feat.의존성 주입 : @Autowired를 통해 new 사용하지 않고 의존 객체 생성 == new를 통해 의존 객체를 직접 생성)
+(feat.의존성 주입 : @Autowired를 통해 new 사용하지 않고 의존 객체 생성 == java에서는 new를 통해 의존 객체를 직접 생성)
 ex)
 @Autowired
 private MainService service; //메소드
