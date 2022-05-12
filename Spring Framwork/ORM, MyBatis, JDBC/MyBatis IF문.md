@@ -1,4 +1,4 @@
-# MyBatis에서의 IF문
+# MyBatis에서의 IF문(조건문)
 
 ```SQL
 
