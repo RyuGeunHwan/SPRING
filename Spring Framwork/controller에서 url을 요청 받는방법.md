@@ -1,6 +1,6 @@
-# Controller에서 URL을 요청받는 2가지 방법
+# Controller에서 URL을 요청받는 2가지 방법(RESTful, QUERYString)
 
-## 1. RESTful
+## 1. RESTful 
 
 ```
 1. RESTful :  주소(URL)를 의미있게 네이밍(이름 정하기)을 하는 방법

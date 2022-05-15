@@ -71,7 +71,8 @@ ON e.deptno = d.deptno
 ```
 
 ```java
-Postman 결과 출력
+//결과 출력
+// 컬렉션즈(List)로 여러개의 결과값을 받아서 Map으로 key와 value로 결과를 받아온다.
 
 [
     {
