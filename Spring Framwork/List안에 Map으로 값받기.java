@@ -1,8 +1,13 @@
-
-
 ★★★★★★★★★★★★★★★★★★★★★★★★★★
+
 List<Map<String, Object>>
-List안에 Map을 포함하여 값을 List안에 key와value로 받기
+List안에 Map을 포함하여 값을 List안에 key와value로(Map) 받기
+Map에 데이터를 추가하게 되면 key와 value로 값이 들어간다.
+	ex) Map<String, Object> map = new HashMap<String, Object>();
+		map.put("이름","류근환")
+		map = 이름(KEY) : 류근환(Value)
+		접근 방법 => map.get("이름"), get을 통하여 key에 접근하게 되면 value값을 불러올 수 있다.
+		
 ★★★★★★★★★★★★★★★★★★★★★★★★★★
 
 package test;
