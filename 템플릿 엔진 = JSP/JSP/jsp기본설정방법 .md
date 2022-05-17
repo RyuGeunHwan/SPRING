@@ -5,9 +5,9 @@
 ### 2. jsp파일과 html 파일의 차이점은 jsp는 language="java"라고 적혀있고 java 문법을 사용 할 수 있다.
 
 ```java
-1. 프로젝트 오른쪽 마우스 클릭 후 Source Folder 클릭후 이름 src/main/webapp 로 설정
-2. 패키지가 생기면 webapp패키지 오른쪽 마우스 클릭 후 제너럴 -> 폴더 -> webapp 폴더 클릭 후 이름 WEB-INF 로 설정
-3. WEB-INF 오른쪽 마우스 클릭 후 폴더 만들기 이름은 views 로 설정
+1. 프로젝트 오른쪽 마우스 클릭 후 Source Folder 클릭후 이름 src/main/webapp 으로 설정
+2. 폴더가 생기면 webapp폴더 오른쪽 마우스 클릭 후 제너럴 -> 폴더 -> webapp 폴더 클릭 후 이름 WEB-INF 로 설정
+3. WEB-INF 오른쪽 마우스 클릭 후 폴더 만들기, 이름은 views 로 설정
 4. views 오른쪽 마우스 클릭 NEW ->  Other -> Web -> JSPfile -> index.jsp(이름 설정) -> finish 클릭
 5. views폴더안에 index.jsp 파일이 생성됨.
 6. jsp로 쓸거야라는 것을 설정 해주어야함. yaml파일 들어가서

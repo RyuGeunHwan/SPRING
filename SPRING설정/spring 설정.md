@@ -2,8 +2,8 @@
 
 <img src="./캡처.PNG" width= 1000px; alt="" />
 
-```
-1. 왼쪽 부분은 회사와 java버젼에 맞게 설정하면 된다.
+```javascript
+1. 왼쪽 설정 부분은 회사와 java버젼에 맞게 설정하면 된다.
 2. 오른쪽 부분(ADD DEPENDENCIES...CTRL + B)은 클릭해서 원하는것 다운로드(추가).
 3. GENERATE CTRL + Enter 클릭하면 .zip파일 다운로드 받아짐.
 4. IDE 실행 파일(spring-workspace)에 넣은뒤 '여기에 압축풀기' 클릭!
@@ -14,8 +14,16 @@
 
 7. banner파일과 logback파일(mapper위치 변경하기) resources패키지에 추가
 8. resources패키지에 sqlmap패키지 생성 후 sqlmapper.xml 파일 생성
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+// MyBatis에게 Mapper 경로를 적어야한다.
+// namespace = "mapper위치경로.Mapper클래스명"
+<mapper namespace="com.dw.board.mapper.BoardMapper">
+
+</mapper>
+
 9. java패키지에 MVC(vo,mapper,service,controller) 생성
-10. 클래스 파일 생성
+10. 클래스((vo,mapper,service,controller)) 파일 생성
 11. "hello word!" 찍어 보기
 ```
 
