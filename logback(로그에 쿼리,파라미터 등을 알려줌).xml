@@ -1,3 +1,10 @@
+<!-- 
+    로그에 내가 실행한 정보를 알려줌 
+    ex) 
+        [2022-05-18 09:52:04] DEBUG c.d.b.m.S.insertStudents - ==>  Preparing: INSERT INTO students ( students_name, students_password ) VALUES ( ?, ? )
+        [2022-05-18 09:52:04] DEBUG c.d.b.m.S.insertStudents - ==> Parameters: ryugeunhwan(String), ryugeunhwan so good(String)
+        [2022-05-18 09:52:04] DEBUG c.d.b.m.S.insertStudents - <==    Updates: 1
+-->
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 	<!--appender 는 로그를 제공할 방법 (파일,메일,콘솔)  -->
