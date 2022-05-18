@@ -84,3 +84,29 @@ Gradle -> MyBatis(ORM) 설치
 // 파일 'build.gradle' 오른쪽 마우스 클릭 후 하단에 Gradle -> Refresh... 클릭해서 새로고침 해준다.
 
 ===============================================================================================================
+
+Gradle -> JSP 다운로드
+
+dependencies{
+//(dependencies 중괄호 안에 붙여넣기)
+//getter,setter 어노테이션으로 함수 생성
+
+    // JSP다운로드
+	implementation "org.apache.tomcat.embed:tomcat-embed-jasper"
+	implementation 'javax.servlet:jstl'
+
+ }
+
+
+===============================================================================================================
+
+Gradle -> Spring security 다운로드
+
+dependencies{
+//(dependencies 중괄호 안에 붙여넣기)
+//getter,setter 어노테이션으로 함수 생성
+
+    //Spring security 다운로드
+	implementation("org.springframework.boot:spring-boot-starter-security")
+
+ }
