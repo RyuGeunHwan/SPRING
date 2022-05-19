@@ -57,6 +57,8 @@ D : DELETE
     2-2) PostMapping은 웹에서 Body로 넘어간다 <-> GetMapping은 웹에서 header(주소 입력창)로 넘어간다.
     ex) 대표적인 예 : 회원가입 => GetMapping으로 넘겨주게 되면 회원정보가 header(주소 입력창)에 나타나기 때문에 PostMapping으로 넘겨주어야한다.
 
+3. ***중요한 데이터를 서버에 전송할 때 POST를 사용해서 데이터를 Body에 숨긴다.
+
 ```
 
 # @PostMapping문법
