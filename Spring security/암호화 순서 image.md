@@ -104,12 +104,12 @@ public class StudentsService {
 
 	// 가입된 학생인지 아닌지 여부 체크(가입된 학생데이터와 가입할 학생데이터 비교)
 		@Transactional(rollbackFor = {Exception.class})
-		public boolean isStudents(StudentsVO vo) {
+		public boolean isStudents(StudentsVO vo) { //html에서 가져온 데이터
 
 			StudentsVO student = studentsMapper.selectStudentsOne(vo);
 			// Mapper에 있는 메소드 파라미터에 쿼리의 결과(암호화된 password를 담은 vo)를 받아서
 			//	StudentsVO student에 대입!
-			// 그러면 메소드 파라미터에 있는 vo는 HTML에서 가져온 데이터이고
+			// 그러면 메소드(isStudents) 파라미터에 있는 vo는 HTML에서 가져온 데이터이고
 			// 변수 student는 DB에서 가져온 데이터이다.
 			if(student == null) {
 				//쿼리 결과가 null로 리턴되면 return false;
