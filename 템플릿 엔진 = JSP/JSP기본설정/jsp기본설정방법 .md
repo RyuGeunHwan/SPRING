@@ -44,3 +44,10 @@ _yaml파일에 JSP 경로 설정 위치_
 _yaml파일에 css,js,image 폴더 위치 설정_
 
 <img src="./image/css,js,image 폴더 위치 설정.PNG" width= 700px; alt="" />
+
+_JSP파일 내부_
+<img src="./image/jsp파일.PNG" width= 700px; alt="" />
+
+```
+jsp파일 내부를 보면 html파일과 흡사 하지만 java코드를 작성할 수 있는 특징이 있다.
+```
