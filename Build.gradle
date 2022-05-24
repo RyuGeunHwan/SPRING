@@ -100,7 +100,7 @@ dependencies{
 
 ===============================================================================================================
 
-Gradle -> Spring security 다운로드
+Gradle -> Spring security 다운로드(데이터 암호화)
 
 dependencies{
 //(dependencies 중괄호 안에 붙여넣기)
@@ -108,5 +108,18 @@ dependencies{
 
     //Spring security 다운로드
 	implementation("org.springframework.boot:spring-boot-starter-security")
+
+ }
+
+ ===============================================================================================================
+
+Gradle -> Spring Session 다운로드
+
+dependencies{
+//(dependencies 중괄호 안에 붙여넣기)
+//getter,setter 어노테이션으로 함수 생성
+
+    // Session 다운로드
+	implementation 'org.springframework.session:spring-session-core'
 
  }
