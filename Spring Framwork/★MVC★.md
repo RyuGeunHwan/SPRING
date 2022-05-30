@@ -16,6 +16,7 @@ M : Model (@Service와 DB 두가지로 나뉨!)
 
 V : View
     최종 사용자에게 결과를 화면(UI)으로 보여줌
+    View의 종류 : FreeMarker, Groovy, *Thymeleaf, Velocity, *JSP
 
 C : Controller
     1. url로 요청을 받아서 화면과 Model을 연결 시켜주는 역할

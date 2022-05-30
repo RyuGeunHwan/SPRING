@@ -1,8 +1,8 @@
 ## MyBatis(==프레임 워크) 란
 
 ```
-1. 마이바티스(MyBatis)는 자바 퍼시스턴스 프레임워크(ORM)의 하나로 XML, 애너테이션(annotation)을 사용하여 SQL 문으로 객체(Interface, Class)들을 연결.
-2. 자바의 객체(Object)와 SQL 사이에서 자동 맵핑을 도와주는 프레임워크
+1. 마이바티스(MyBatis)는 자바 퍼시스턴스 프레임워크(ORM)의 하나로 XML파일, 애너테이션(annotation)을 사용하여 SQL 문으로 객체(Interface, Class)들을 연결.
+2. 자바의 객체(Object)와 SQL 사이에서 자동 맵핑을 도와주는 프레임워크(.xml파일)
 ```
 
 ### MyBatis 사용법
@@ -24,8 +24,8 @@
 # 문서 참고 https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html
 # MyBatis 설정
 mybatis:
-  mapper-locations: classpath:/sqlmap/sqlmapper_*.xml #sql 파일 위치
-  type-aliases-package: com.example.first_spring.vo #vo 패키지 위치
+  mapper-locations: classpath:/sqlmap/sqlmapper_*.xml #sql 파일 위치(xml파일 위치 경로, * : 전체를 의미함.)
+  type-aliases-package: com.example.first_spring.vo #vo 패키지 위치(패키지명 입력)
 
 # MySQL 접속정보 설정
 spring:
@@ -60,7 +60,7 @@ public interface MainMapper {
 <!-- namespace에 MainMapper위치를 지정함 -->
 <mapper namespace="com.example.first_spring.mapper.MainMapper">
     <!-- id는 interface에 있는 메소드이름과 동일해야 함 -->
-    <!-- resultType은 SQL결과를 받을 데이터 타입 -->
+    <!-- resultType : SQL결과를 받을 데이터 타입, returnType이라고 생각하면 된다.-->
     <!-- resultType="List<EmpVO>" 이런 문법은 없음! List는 자바 인터페이스에서 정의 -->
     <!-- Mybatis가 VO클래스에 있는 setter함수를 스캔하여 자동으로 파리미터에 값을 대입함. -->
     <select id="getEmpList" resultType="EmpVO">

@@ -2,7 +2,7 @@
 
 ## 1. RESTful 
 
-```
+```java
 1. RESTful :  주소(URL)를 의미있게 네이밍(이름 정하기)을 하는 방법
     1-1) 주소만 보고도 이것이 무엇인지 짐작이 가게끔 네이밍을 하는것.
     ex)
@@ -13,7 +13,7 @@
 
 2. RESTful 규칙
     2-1) 주소 이름은 동사X -> 명사로 작성
-        ex) /member/ insert (X)
+        ex) /member/insert (X)
             /member/no/123 (O)
 
     2-2) 주소 이름은 대문자 X -> 소문자 사용
