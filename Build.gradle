@@ -123,3 +123,19 @@ dependencies{
 	implementation 'org.springframework.session:spring-session-core'
 
  }
+
+===============================================================================================================
+
+
+Gradle -> pagHandler(페이징 구현) 다운로드
+
+dependencies{
+//(dependencies 중괄호 안에 붙여넣기)
+//getter,setter 어노테이션으로 함수 생성
+
+     //PageHanlder(라이브러리)
+	implementation group: 'com.github.pagehelper', name: 'pagehelper-spring-boot-starter', version: '1.4.2'
+
+ }
+
+
