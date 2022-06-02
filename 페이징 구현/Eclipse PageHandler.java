@@ -3,7 +3,6 @@ package 페이징;
 public class PageHandler {
 
 	public static void main(String[] args) {
-
 		//네이버 웹툰 여신강림 페이징
 		//야옹이 작가는 210화까지 연재함.
 		
