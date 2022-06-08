@@ -1,0 +1,14 @@
+Maven은 pom.xml파일에 설정을 넣어준다.
+
+
+JSP다운로드
+<!--JSP MAVEN START-->
+		<dependency>
+		    <groupId>org.apache.tomcat.embed</groupId>
+		    <artifactId>tomcat-embed-jasper</artifactId>
+		</dependency>
+		<dependency> 
+			  <groupId>javax.servlet</groupId> 
+			  <artifactId>jstl</artifactId> 
+		</dependency>
+<!--JSP MAVEN END-->
