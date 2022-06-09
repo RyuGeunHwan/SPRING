@@ -2,6 +2,26 @@
 
 ## if,else,for-each(jsp는 기본for문 X)
 
+```
+1. if
+    ===
+    <c:if test="조건문">
+
+    </c:if>
+
+2. if,else
+    === <c:choose>
+        <c:when test="조건문"> if문 </c:when>
+        <c:otherwise> else문 </c:otherwise>
+        </c:choose>
+
+3. JSP for문(for_each문)
+    ===
+    <c:forEach items="${controller에서 받아오는 값}" var="변수명">
+
+    </c:forEach>
+```
+
 ### HomeController.java
 
 ```java
