@@ -11,6 +11,12 @@
 
 6. .JSP을 사용할경우 JSP파일에 HTML + CSS + JavaScript + Java 모두를 사용할 수 있다.(AJAX도 사용가능)
 7. retrun값을 데이터값이 아닌 **파일명으로 받아준다.
+
+8. Controller클래스에서 jsp파일로 key값을 넘겨줄 경우에는 파라미터에 'ModelMap map'를 입력 한뒤 .addAttribute를 사용하여 넘겨준다.
+    8-1) ex) map.addAttribute("wsgList", list);
+
+9. controller에서 받아온 값은 '${}'문법을 사용하여 접근한다.
+    9-1) ${wsgList}
 ```
 
 ```

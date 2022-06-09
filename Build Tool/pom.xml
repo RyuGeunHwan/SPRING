@@ -1,5 +1,4 @@
-Maven은 pom.xml파일에 설정을 넣어준다.
-
+Maven은 pom.xml파일(dependency)에 설정을 해준다. <-> Gradle은 Build.gradle파일(dependencies)에 설정을 해준다.
 
 JSP다운로드
 <!--JSP MAVEN START-->
@@ -12,3 +11,9 @@ JSP다운로드
 			  <artifactId>jstl</artifactId> 
 		</dependency>
 <!--JSP MAVEN END-->
+<!--devtools START-->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+<!--devtools END-->
