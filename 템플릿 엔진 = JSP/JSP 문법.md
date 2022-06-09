@@ -2,7 +2,7 @@
 
 ## if,else,for-each(jsp는 기본for문 X)
 
-```
+```jsp
 1. if
     ===
     <c:if test="조건문">
@@ -10,7 +10,9 @@
     </c:if>
 
 2. if,else
-    === <c:choose>
+    ===
+    **c:choose로 감싸 주어야한다.
+        <c:choose>
         <c:when test="조건문"> if문 </c:when>
         <c:otherwise> else문 </c:otherwise>
         </c:choose>
@@ -20,6 +22,19 @@
     <c:forEach items="${controller에서 받아오는 값}" var="변수명">
 
     </c:forEach>
+
+4. fn(function)사용
+    지시자 부분에 이 문구가 있어야한다.
+        <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+    JSP태그
+        <c:choose>
+            <c:when test="${fn:(함수내용)}">
+            </c:when>
+            <c:otherwise>
+            </c:otherwise>
+        </c:choose>
+    ex)
+
 ```
 
 ### HomeController.java

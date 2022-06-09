@@ -11,9 +11,17 @@ JSP다운로드
 			  <artifactId>jstl</artifactId> 
 		</dependency>
 <!--JSP MAVEN END-->
+
 <!--devtools START-->
 		<dependency>
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-devtools</artifactId>
 		</dependency>
 <!--devtools END-->
+
+<!--Spring Session Core START-->
+<dependency>
+    <groupId>org.springframework.session</groupId>
+    <artifactId>spring-session-core</artifactId>
+</dependency>
+<!--Spring Session Core END-->
