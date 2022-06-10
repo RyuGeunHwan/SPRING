@@ -1,5 +1,14 @@
 # JSP 기본 문법
 
+## JSTL 추가
+
+```jsp
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+
+ JSP 지시자에 JSTL을 추가해야 if,else,for-each를 사용할 수 있다.
+```
+
 ## if,else,for-each(jsp는 기본for문 X)
 
 ```jsp
@@ -23,7 +32,16 @@
 
     </c:forEach>
 
-4. fn(function)사용
+4. JSP for-each문을 일반for문으로 변환
+    ===
+    <!-- 일반 for문처럼 사용할 수 있는 for-each문 -->
+	<!-- begin부터 end까지 반복 (시작과 끝을 지정해준 뒤 변수에 대입하여 반복) -->
+	<c:forEach begin="1" end="5" var="i">
+		<h4>${i}</h4>
+	</c:forEach>
+
+
+5. fn(function)사용
     지시자 부분에 이 문구가 있어야한다.
         <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
     JSP태그

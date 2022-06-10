@@ -17,6 +17,7 @@
 
 9. controller에서 받아온 값은 '${}'문법을 사용하여 접근한다.
     9-1) ${wsgList}
+10. JSP는 for문이 없고 for-each문이다.
 ```
 
 ```
