@@ -1,4 +1,6 @@
-# S3(Simple Storage Service)
+# S3(Simple Storage Service) : 대표적인 이미지 서버, 호스팅 서버
+
+### S3에는 DB설치 불가능
 
 ```
 사용 여부 :
