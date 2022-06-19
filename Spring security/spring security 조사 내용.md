@@ -14,8 +14,16 @@
 1. Filter 기반으로 동작, MVC와 분리하여 관리 및 동작
 2. 어노테이션을 통한 간단한 설정
    2-1) @EnableWebSecurity
-   2-2) 
+   2-2) @Configuration
 3. WebSecurityConfig extends WebSecurityConfigurerAdapter 상속을 통한 설정
+```
+
+## 사용 상황
+```
+```
+
+## 관련 어노테이션
+```
 ```
 
 ### maven(pom.xml) 의존성 추가
