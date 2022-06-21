@@ -57,6 +57,7 @@
             http.csrf().disable() // 임의의 csrf 토큰을 지급한 후 이를 이용해 요청에 csrf 토큰이 없거나 불일치 하면 4XX 상태 코드를 리턴한다. 이를 비활성화하기 위하여 쓰는 메소드
                 .formLogin().disable();
             .and()
+            // .authorizeRequests() : 인가(특정 권한 접근 정책 지정)
                 .authorizeRequests() // 특정 경로에 특정 권한을 가진 사람만 접근할 수 있도록 설정하는 메소드.
                 .anyRequest().authenticated() //어떤 요청에도 보안검사를 진행하는 메소드.
                // .antMatchers() : 특정 경로 설정
