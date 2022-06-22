@@ -1,4 +1,4 @@
-# <a href="https://devops.datenkollektiv.de/banner.txt/index.html"></a>
+# <a href="https://devops.datenkollektiv.de/banner.txt/index.html">log banner</a>
 
 ```java
 1. spring boot들어가서 resources패키지에 banner.txt파일 만들어서 사이트에 나오는 로그 실행 배너 그대로 복사 붙여넣기 하면됨.

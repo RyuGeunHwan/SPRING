@@ -10,7 +10,7 @@
 5. IDE(스프링,이클립스) 들어가서 임포트 하기!
 6. .propertis 파일을 .yaml로 파일로 바꾸고 파일 들어가서
 
-     type-aliases-package : 데이터를 받을 패키지 경로)변경해주기!
+     type-aliases-package : 데이터를 받을 패키지 경로 변경해주기!
 
 7. banner파일과 logback파일(mapper위치 변경하기) resources패키지에 추가
 8. resources패키지에 sqlmap패키지 생성 후 sqlmapper.xml 파일 생성
