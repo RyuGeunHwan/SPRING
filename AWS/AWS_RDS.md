@@ -1,5 +1,7 @@
 # RDS : 데이터베이스 전용 서버(관계형 DB만 설치 가능)
 
+### <a href="https://velog.io/@ehddnr7355/AWS-RDS-%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0-%ED%9B%84-DataGrip%EC%9C%BC%EB%A1%9C-%EC%99%B8%EB%B6%80%EC%97%90%EC%84%9C-%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0">AWS-RDS 구축 참고 사이트</a>
+
 ## RDS 개념
 
 ```
