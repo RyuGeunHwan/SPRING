@@ -32,7 +32,7 @@ build.gradle파일 gradle refresh
 ```
 
 <img src="./war압축 설정 image/DB배포1.PNG" width= 500px; alt="" />
-<img src="./war압축 설정 image/DB배포2.PNG" width= 500px; alt="" />
+<img src="./war압축 설정 image/DB배포2.PNG" width= 600px; alt="" />
 <img src="./war압축 설정 image/DB배포3.PNG" width= 800px; alt="" />
 
 ```
