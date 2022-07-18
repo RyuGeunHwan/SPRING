@@ -52,7 +52,7 @@
 3. 권한 :
    3-1) 퍼블릭 액세스 차단(버킷 설정) 편집 클릭 -> '모든 퍼블릭 액세스 차단' checked 해제 -> 변경사항 저장 클릭
    3-2) 버킷정책 편집 클릭 -> 버킷 ARN 복사 -> 정책 생성기 클릭 ->
-   'Select Type of Policy' : S3 Bucket Policy 선택 -> Principal : _ 입력 -> Actions : GetObject 선택 ->
+   'Select Type of Policy' : S3 Bucket Policy 선택 -> Principal : * 입력 -> Actions : GetObject 선택 ->
    Amazon Resource Name (ARN)에 버킷 ARN 붙여넣기 + /_ 입력 -> Add Statement 클릭 -> Generate Policy 클릭 ->
    복사 후 S3 버킷정책 편집 페이지에 붙여넣기 -> 변경 사항 저장 클릭
 
